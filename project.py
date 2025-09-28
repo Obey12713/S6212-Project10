@@ -2,7 +2,6 @@ import time
 import pandas as pd
 import math
 
-# Option 6 function
 def option6(n):
     j = 2
     total = 0
@@ -26,7 +25,6 @@ for n in n_values:
     end = time.perf_counter()
     results.append((n, end - start))
 
-# Save results to CSV (Excel can open this directly)
 df = pd.DataFrame(results, columns=["n", "Time"])
 df.to_csv("option6_results.csv", index=False)
 
